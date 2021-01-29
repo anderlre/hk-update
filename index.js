@@ -48,7 +48,7 @@ var server = http.createServer(function(req,res){
                 res.statusCode = 200;
                 res.setHeader('Content-Type','text/plain');
 
-                res.end();//返回所有的文件名 files.join(',')
+                res.end(files.join(','));//返回所有的文件名
             })
         }
     })
